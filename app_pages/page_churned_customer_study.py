@@ -100,6 +100,7 @@ def parallel_plot_churn(df_eda):
     disc = ArbitraryDiscretiser(binning_dict={'tenure': tenure_map})
     df_parallel = disc.fit_transform(df_eda)
     
+    
     n_classes = len(tenure_map) - 1
     classes_ranges = disc.binner_dict_['tenure'][1:-1]
     LabelsMap = {}

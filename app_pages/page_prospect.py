@@ -59,7 +59,8 @@ def page_prospect_body():
 
 	# predict on live data
 	st.write("---")
-	if st.button("Run Predictive Analysis"): 
+	if st.button("Run Predictive Analysis"):
+		 
 		churn_prediction = predict_churn(X_live, churn_features,
 										churn_pipe_dc_fe, churn_pipe_model)
 		
